@@ -43,7 +43,7 @@ const NavBar = (props) => {
   );
 
   const logoDefault = (
-    <img src={acicMiet} alt="acicLogo" style={{ width: "20%" }} />
+    <img src={acicMiet} alt="acicLogo" style={{ width: "10rem" }} />
   );
 
   const dropDownMenu = (
@@ -99,7 +99,7 @@ const NavBar = (props) => {
     <AppBar
       position="fixed"
       color="transparent"
-      elevation={0}
+      elevation={5}
       sx={{ backdropFilter: "blur(10px)" }}
     >
       <Container maxWidth="xl">

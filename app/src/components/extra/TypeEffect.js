@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-const words = ["About Us"];
+import "./extra.css";
+
+const words = ["ACIC Meerut", "Welcome", "About Us"];
 
 const TypeEffects = (props) => {
   const [index, setIndex] = useState(0);
@@ -28,15 +30,15 @@ const TypeEffects = (props) => {
 
     const timeout = setTimeout(() => {
       setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 : 150, parseInt(Math.random() * 350)));
+    }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 : 150, parseInt(Math.random() * 100)));
 
     return () => clearTimeout(timeout);
   }, [subIndex, index, reverse]);
 
   return (
-    <>
-      <h1>{`${words[index].substring(0, subIndex)}`}</h1>
-    </>
+    <div style={{ height: "32px", margin: "1rem" }}>
+      <h1 className="Welcome">{`${words[index].substring(0, subIndex)}`}</h1>
+    </div>
   );
 };
 
