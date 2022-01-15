@@ -36,7 +36,7 @@ const TypeEffects = (props) => {
   }, [subIndex, index, reverse]);
 
   return (
-    <div style={{ height: "32px", margin: "1rem" }}>
+    <div style={{ height: "32px" }}>
       <h1 className="Welcome">{`${words[index].substring(0, subIndex)}`}</h1>
     </div>
   );
