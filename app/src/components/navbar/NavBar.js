@@ -100,7 +100,7 @@ const NavBar = (props) => {
       position="fixed"
       color="transparent"
       elevation={5}
-      sx={{ backdropFilter: "blur(10px)" }}
+      sx={{ backdropFilter: "blur(20px)" }}
     >
       <Container maxWidth="xl">
         <Toolbar style={{ justifyContent: "space-between" }} disableGutters>
