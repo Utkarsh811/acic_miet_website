@@ -3,6 +3,7 @@ import { useTheme } from "@mui/material/styles";
 import { Paper } from "@mui/material";
 
 import TypeEffects from "../../components/extra/TypeEffect";
+import Carousel from "../../components/carousel/Carousel";
 
 import "./home.css";
 
@@ -29,14 +30,15 @@ const Home = (props) => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: minHeight + 15,
+        marginTop: minHeight + 30,
         padding: "0px 5%",
       }}
     >
-      <TypeEffects />
       <Paper elevation={3} style={{ padding: "1rem" }}>
+        <TypeEffects />
         {aboutus}
       </Paper>
+      <Carousel />
     </div>
   );
 };
