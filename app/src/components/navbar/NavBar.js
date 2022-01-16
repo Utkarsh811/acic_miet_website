@@ -99,7 +99,7 @@ const NavBar = (props) => {
     <AppBar
       position="fixed"
       color="transparent"
-      elevation={5}
+      elevation={0}
       sx={{ backdropFilter: "blur(20px)" }}
     >
       <Container maxWidth="xl">
