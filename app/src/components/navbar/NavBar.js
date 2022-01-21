@@ -88,7 +88,15 @@ const NavBar = (props) => {
   const desktopNav = (
     <Box style={{ flex: 1, justifyContent: "space-evenly" }}>
       {pages.map((page, index) => (
-        <Button key={index} varient="text" color="inherit" size="small">
+        <Button
+          key={index}
+          varient="text"
+          size="medium"
+          style={{
+            width: "10rem",
+            color: "#fff",
+          }}
+        >
           {page}
         </Button>
       ))}
@@ -98,13 +106,15 @@ const NavBar = (props) => {
   return (
     <AppBar
       position="fixed"
-      color="transparent"
       elevation={0}
-      sx={{ backdropFilter: "blur(20px)" }}
+      sx={{
+        backdropFilter: "blur(20px)",
+        background: "rgba(10, 10, 10, 0.7)",
+      }}
     >
       <Container maxWidth="xl">
         <Toolbar style={{ justifyContent: "space-between" }} disableGutters>
-          {isPhone ? logoPhone : logoDefault}
+          {/* {isPhone ? logoPhone : logoDefault} */}
           <div>{isPhone ? dropDownMenu : desktopNav}</div>
         </Toolbar>
       </Container>
