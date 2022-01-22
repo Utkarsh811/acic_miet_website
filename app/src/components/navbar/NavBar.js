@@ -39,11 +39,11 @@ const NavBar = (props) => {
   };
 
   const logoPhone = (
-    <img src={acicMietPhone} alt="acicLogo" style={{ width: "10rem" }} />
+    <img src={acicMietPhone} alt="acicLogo" style={{ width: "12rem" }} />
   );
 
   const logoDefault = (
-    <img src={acicMiet} alt="acicLogo" style={{ width: "10rem" }} />
+    <img src={acicMiet} alt="acicLogo" style={{ width: "12rem" }} />
   );
 
   const dropDownMenu = (
@@ -86,9 +86,9 @@ const NavBar = (props) => {
   );
 
   const desktopNav = (
-    <Box style={{ flex: 1, justifyContent: "space-evenly" }}>
+    <Box style={{ flex: 1, justifyContent: "space-around" }}>
       {pages.map((page, index) => (
-        <Button key={index} varient="text" color="inherit" size="small">
+        <Button key={index} varient="text" color="inherit" size="large">
           {page}
         </Button>
       ))}
@@ -103,7 +103,7 @@ const NavBar = (props) => {
       sx={{ backdropFilter: "blur(20px)" }}
     >
       <Container maxWidth="xl">
-        <Toolbar style={{ justifyContent: "space-between" }} disableGutters>
+        <Toolbar style={{ justifyContent: "space-around" }} disableGutters>
           {isPhone ? logoPhone : logoDefault}
           <div>{isPhone ? dropDownMenu : desktopNav}</div>
         </Toolbar>
