@@ -6,6 +6,7 @@ import TypeEffects from "../../components/extra/TypeEffect";
 import Carousel from "../../components/carousel/Carousel";
 
 import "./home.css";
+import Banner from "../../components/baner/Banner";
 
 const Home = (props) => {
   const theme = useTheme();
@@ -34,7 +35,8 @@ const Home = (props) => {
         padding: "0px 5%",
       }}
     >
-      <Paper elevation={3} style={{ padding: "1rem" }}>
+      <Banner style={{ alignSelf: "flex-start" }} />
+      <Paper elevation={0} style={{ padding: "1rem" }}>
         <TypeEffects />
         {aboutus}
       </Paper>
