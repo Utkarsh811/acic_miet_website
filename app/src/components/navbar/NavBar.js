@@ -86,7 +86,14 @@ const NavBar = (props) => {
   );
 
   const desktopNav = (
-    <Box style={{ flex: 1, justifyContent: "space-around" }}>
+    <Box
+      style={{
+        display: "flex",
+        flex: 1,
+        justifyContent: "space-around",
+        width: "90vw",
+      }}
+    >
       {pages.map((page, index) => (
         <Button
           key={index}
