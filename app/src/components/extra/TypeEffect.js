@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from 'react-dom';
 import "./extra.css";
 
 const words = ["ACIC Meerut", "Welcome", "About Us"];
+
+
+
+
 
 const TypeEffects = (props) => {
   const [index, setIndex] = useState(0);
@@ -41,5 +46,7 @@ const TypeEffects = (props) => {
     </div>
   );
 };
+
+
 
 export default TypeEffects;

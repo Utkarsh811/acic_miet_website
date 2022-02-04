@@ -92,8 +92,9 @@ const NavBar = (props) => {
           key={index}
           varient="text"
           size="medium"
+          wweeee
           style={{
-            width: "10rem",
+            width: "12rem",
             color: "#fff",
           }}
         >
@@ -109,7 +110,10 @@ const NavBar = (props) => {
       elevation={0}
       sx={{
         backdropFilter: "blur(20px)",
-        background: "rgba(10, 10, 10, 0.7)",
+        /*background: "rgba(10, 10, 10, 0.7)",*/
+        background: "rgb(10 10 10 / 88%)",
+
+      
       }}
     >
       <Container maxWidth="xl">
