@@ -6,7 +6,7 @@ import TypeEffects from "../../components/extra/TypeEffect";
 import Carousel from "../../components/carousel/Carousel";
 
 import "./home.css";
-import Banner from "../../components/baner/Banner";
+import Banner from "../../components/banner/Banner";
 
 const Home = (props) => {
   const theme = useTheme();
