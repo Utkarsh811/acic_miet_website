@@ -7,20 +7,22 @@
 .incubation-wrapper {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   flex-direction: column;
   line-height: 2rem;
+  text-align: center;
 }
 
 .apply {
-  background: linear-gradient(to right, #c33764 0%, #1d2671 100%);
+  border-radius: 2rem !important;
+  background: linear-gradient(to right, #ff7d04 0%, #ec3900 40%, #c6119e 100%);
 }
 
 .incubation {
   font-size: 2rem;
-  font-weight: 600;
-  background: linear-gradient(to right, #c28cff 0%, #185a9d 25%, #f907a8 100%);
+  font-weight: 800;
+  background: linear-gradient(to right, #e1037b 0%, #e90e00 40%, #0068e2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 1rem;

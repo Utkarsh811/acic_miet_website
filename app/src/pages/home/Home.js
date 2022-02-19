@@ -13,7 +13,7 @@ const Home = (props) => {
   let minHeight = Number(theme.mixins.toolbar.minHeight);
 
   const aboutus = (
-    <p>
+    <p className="about">
       Atal Innovation Mission (AIM) at NITI Aayog is mandated to promote a
       culture of innovation and entrepreneurship in India. Until now, AIM has
       selected 102 institutions for supporting them in establishment of Atal
@@ -31,12 +31,15 @@ const Home = (props) => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: minHeight + 20,
         padding: "0px 5%",
       }}
     >
       <Banner style={{ alignSelf: "flex-start" }} />
-      <Paper elevation={0} style={{ padding: "1rem" }}>
+      <Paper
+        className="aboutus"
+        elevation={5}
+        style={{ backgroundColor: "#202020", padding: "1rem" }}
+      >
         <TypeEffects />
         {aboutus}
       </Paper>

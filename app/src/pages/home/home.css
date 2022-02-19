@@ -3,3 +3,12 @@
   font-weight: 400;
   letter-spacing: 1px;
 }
+
+.aboutus {
+  color: white !important;
+  border-radius: 1rem !important;
+}
+
+.about {
+  padding: 0.5rem;
+}

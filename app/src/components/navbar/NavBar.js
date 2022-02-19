@@ -114,6 +114,7 @@ const NavBar = (props) => {
           style={{
             width: "8rem",
             color: "#fff",
+            fontWeight: 600,
           }}
         >
           {page}

@@ -11,7 +11,7 @@ const Banner = (props) => {
       style={{
         display: "flex",
         width: "100vw",
-        height: "100vh",
+        height: "70vh",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
@@ -24,12 +24,15 @@ const Banner = (props) => {
         style={{ width: "25rem" }}
       />
       <div className="incubation-wrapper">
-        <h1 className="incubation">INCUBATION </h1>
-        <h1 className="incubation">CENTRE</h1>
-        <h1 className="incubation">MIET MEERUT</h1>
+        <h1 className="incubation">INCUBATION CENTRE MIET MEERUT</h1>
       </div>
       <div>
-        <Button className="apply" variant="contained" size="large">
+        <Button
+          className="apply"
+          variant="contained"
+          size="large"
+          style={{ fontWeight: 600 }}
+        >
           Apply now
         </Button>
       </div>
