@@ -31,7 +31,7 @@ const Home = (props) => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: minHeight + 30,
+        marginTop: minHeight + 20,
         padding: "0px 5%",
       }}
     >

@@ -11,20 +11,23 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
+import { useNavigate } from "react-router-dom";
 
-import acicMiet from "../../assets/acicMiet.png";
-import acicMietPhone from "../../assets/acicMietPhone.png";
+// import acicMiet from "../../assets/acicMiet.png";
+// import acicMietPhone from "../../assets/acicMietPhone.png";
 
 const pages = [
+  "Home",
   "Services",
   "Outcome",
   "Apply",
   "Careers",
   "Contact",
-  "Web mail",
+  "Mail",
 ];
 
 const NavBar = (props) => {
+  const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const theme = useTheme();
@@ -38,13 +41,13 @@ const NavBar = (props) => {
     setAnchorEl(null);
   };
 
-  const logoPhone = (
-    <img src={acicMietPhone} alt="acicLogo" style={{ width: "12rem" }} />
-  );
+  // const logoPhone = (
+  //   <img src={acicMietPhone} alt="acicLogo" style={{ width: "12rem" }} />
+  // );
 
-  const logoDefault = (
-    <img src={acicMiet} alt="acicLogo" style={{ width: "12rem" }} />
-  );
+  // const logoDefault = (
+  //   <img src={acicMiet} alt="acicLogo" style={{ width: "12rem" }} />
+  // );
 
   const dropDownMenu = (
     <Box>
@@ -77,7 +80,13 @@ const NavBar = (props) => {
         }}
       >
         {pages.map((page) => (
-          <MenuItem key={page} onClick={handleCloseMenu}>
+          <MenuItem
+            key={page}
+            onClick={() => {
+              navigate(`/${page.toLowerCase()}`);
+              setAnchorEl(null);
+            }}
+          >
             <Typography textAlign="center">{page}</Typography>
           </MenuItem>
         ))}
@@ -99,8 +108,11 @@ const NavBar = (props) => {
           key={index}
           varient="text"
           size="medium"
+          onClick={() => {
+            navigate(`/${page.toLowerCase()}`);
+          }}
           style={{
-            width: "12rem",
+            width: "8rem",
             color: "#fff",
           }}
         >
@@ -115,7 +127,7 @@ const NavBar = (props) => {
       position="fixed"
       elevation={0}
       sx={{
-        backdropFilter: "blur(20px)",
+        backdropFilter: "blur(25px)",
         background: "rgb(10 10 10 / 88%)",
       }}
     >

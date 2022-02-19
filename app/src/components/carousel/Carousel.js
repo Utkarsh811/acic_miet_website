@@ -1,18 +1,14 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./Carousel.css";
 
-// import Swiper core and required modules
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 
-// install Swiper modules
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Carousel = (props) => {
@@ -22,7 +18,7 @@ const Carousel = (props) => {
       <SwiperSlide key={i}>
         <img
           src={`https://picsum.photos/id/${i}/700/300`}
-          alt={`image${i}`}
+          alt={`${i}`}
           styles={{ width: 200, height: 300 }}
         />
       </SwiperSlide>

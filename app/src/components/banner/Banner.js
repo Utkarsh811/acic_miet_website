@@ -1,7 +1,8 @@
 import React from "react";
+import { Button } from "@mui/material";
 
 import acicMiet from "../../assets/acicMiet.png";
-import acicMietPhone from "../../assets/acicMietPhone.png";
+import "./banner.css";
 
 const Banner = (props) => {
   return (
@@ -16,7 +17,22 @@ const Banner = (props) => {
         alignItems: "center",
       }}
     >
-      <img src={acicMiet} alt="acicLogo" style={{ width: "20rem" }} />
+      <img
+        className="Logo"
+        src={acicMiet}
+        alt="acicLogo"
+        style={{ width: "25rem" }}
+      />
+      <div className="incubation-wrapper">
+        <h1 className="incubation">INCUBATION </h1>
+        <h1 className="incubation">CENTRE</h1>
+        <h1 className="incubation">MIET MEERUT</h1>
+      </div>
+      <div>
+        <Button className="apply" variant="contained" size="large">
+          Apply now
+        </Button>
+      </div>
     </div>
   );
 };

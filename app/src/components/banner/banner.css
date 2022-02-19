@@ -1,0 +1,39 @@
+.Logo {
+  animation: fadein ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.incubation-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.apply {
+  background: linear-gradient(to right, #c33764 0%, #1d2671 100%);
+}
+
+.incubation {
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #c28cff 0%, #185a9d 25%, #f907a8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  animation: fadein ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
