@@ -13,7 +13,7 @@ import Mail from "./pages/mail/Mail";
 function App() {
   const theme = useTheme();
   let minHeight = Number(theme.mixins.toolbar.minHeight);
-  minHeight += 50;
+  minHeight += 20;
   return (
     <div className="App">
       <NavBar />

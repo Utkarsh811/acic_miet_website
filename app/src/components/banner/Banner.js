@@ -21,7 +21,7 @@ const Banner = (props) => {
         className="Logo"
         src={acicMiet}
         alt="acicLogo"
-        style={{ width: "25rem" }}
+        style={{ width: "22rem" }}
       />
       <div className="incubation-wrapper">
         <h1 className="incubation">INCUBATION CENTRE MIET MEERUT</h1>
