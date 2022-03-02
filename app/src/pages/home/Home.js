@@ -2,6 +2,7 @@ import React from "react";
 import { useTheme } from "@mui/material/styles";
 import { Paper } from "@mui/material";
 
+
 import TypeEffects from "../../components/extra/TypeEffect";
 import Carousel from "../../components/carousel/Carousel";
 

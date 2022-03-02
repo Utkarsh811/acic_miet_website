@@ -27,17 +27,18 @@ particlesJS(
         value: "#000000",
       },
       shape: {
-        type: "circle",
+        type: "polygon",
         stroke: {
           width: 0,
           color: "#000000",
         },
         polygon: {
-          nb_sides: 5,
+          nb_sides: 10
+          ,
         },
         image: {
           src: "img/github.svg",
-          width: 100,
+          width: 200,
           height: 100,
         },
       },
@@ -46,7 +47,7 @@ particlesJS(
         random: false,
         anim: {
           enable: false,
-          speed: 1,
+          speed: 0.5,
           opacity_min: 0.1,
           sync: false,
         },

@@ -18,6 +18,11 @@
   border-radius: 2rem !important;
   background: linear-gradient(to right, #ff7d04 0%, #ec3900 40%, #c6119e 100%);
 }
+.apply:hover {
+  border-radius: 2rem !important;
+  color: black;
+  background: linear-gradient(to right, #f5e8db 0%, #e2dcda 40%, rgb(228, 218, 226) 100%);
+}
 
 .incubation {
   font-size: 2rem;
