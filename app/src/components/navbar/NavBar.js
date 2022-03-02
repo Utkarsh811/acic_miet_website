@@ -13,9 +13,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 
-// import acicMiet from "../../assets/acicMiet.png";
-// import acicMietPhone from "../../assets/acicMietPhone.png";
-
 const pages = [
   "Home",
   "Services",
@@ -40,14 +37,6 @@ const NavBar = (props) => {
   const handleCloseMenu = () => {
     setAnchorEl(null);
   };
-
-  // const logoPhone = (
-  //   <img src={acicMietPhone} alt="acicLogo" style={{ width: "12rem" }} />
-  // );
-
-  // const logoDefault = (
-  //   <img src={acicMiet} alt="acicLogo" style={{ width: "12rem" }} />
-  // );
 
   const dropDownMenu = (
     <Box>

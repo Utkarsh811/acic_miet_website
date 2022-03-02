@@ -24,6 +24,25 @@ const Home = (props) => {
       adoption in India
     </p>
   );
+
+  const aboutDetails = (
+    <p className="about">
+      There is still a need for creating opportunities for the community towards
+      strengthening the innovation ecosystem and offer them space and an
+      enabling environment for the conceptualisation of innovative products. In
+      fulfilling the commitments to serve the society, the creative ideas and
+      innovative thoughts are required to give shape into proof of concept,
+      pre-prototype and prototype, having the potential to be transformed into a
+      Minimum Viable Product for the benefit of society and offering unique
+      innovative solutions. AIM proposes to support the establishment of
+      community innovation centres for this purpose. These centres will provide
+      requisite infrastructure for innovation in the unserved / underserved
+      regions or having potential to build innovation ecosystems in various
+      parts of the country. Thus, nurturing entrepreneurs from the community to
+      help them address various societal challenges. The initiative of AIM as
+      Atal Community Innovation Centre (ACIC)
+    </p>
+  );
   return (
     <div
       className="Content"
@@ -43,6 +62,8 @@ const Home = (props) => {
       >
         <TypeEffects />
         {aboutus}
+
+        {aboutDetails}
       </Paper>
       <Carousel />
     </div>
