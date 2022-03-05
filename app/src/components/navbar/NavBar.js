@@ -95,7 +95,7 @@ const NavBar = (props) => {
       {pages.map((page, index) => (
         <Button
           key={index}
-          varient="text"
+          varient="outlined"
           size="medium"
           onClick={() => {
             navigate(`/${page.toLowerCase()}`);
