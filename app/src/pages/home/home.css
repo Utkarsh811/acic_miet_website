@@ -5,12 +5,17 @@
   letter-spacing: 1px;
 }
 
-.aboutus {
+.aboutus,
+.whatsnew {
   color: white !important;
   border-radius: 1rem !important;
   margin: 1rem 0 1rem;
 }
 
+.whatsnew {
+  margin: 1rem;
+}
+
 .about {
-  padding: 0.5rem;
+  padding: 2rem;
 }
