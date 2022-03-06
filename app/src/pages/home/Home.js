@@ -2,7 +2,6 @@ import React from "react";
 import { useTheme } from "@mui/material/styles";
 import { Paper } from "@mui/material";
 
-
 import TypeEffects from "../../components/extra/TypeEffect";
 import Carousel from "../../components/carousel/Carousel";
 
@@ -55,22 +54,23 @@ const Home = (props) => {
       }}
     >
       <Banner style={{ alignSelf: "flex-start" }} />
-
-      <WhatsNew />
-      <Paper
-        className="aboutus"
-        elevation={5}
-        style={{
-          backgroundColor: "#202020",
-          padding: "1rem",
-          textAlign: "center",
-        }}
-      >
-        <TypeEffects />
-        {aboutus}
-        <h1>WHO ARE WE</h1>
-      </Paper>
-
+      <div className="Contentabout">
+        <WhatsNew />
+        <Paper
+          className="aboutus"
+          elevation={5}
+          style={{
+            backgroundColor: "#202020",
+            flexBasis: "50rem",
+            padding: "1rem",
+            textAlign: "center",
+          }}
+        >
+          <TypeEffects />
+          {aboutus}
+          <h1>WHO ARE WE</h1>
+        </Paper>
+      </div>
       <Carousel />
     </div>
   );

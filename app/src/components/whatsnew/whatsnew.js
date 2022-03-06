@@ -14,7 +14,7 @@ const WhatsNew = (props) => {
       style={{
         backgroundColor: "#202020",
         padding: "0.5rem",
-        width: "100%",
+        flexBasis: "20rem",
         textAlign: "center",
       }}
     >
