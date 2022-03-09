@@ -22,7 +22,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home topMargin={minHeight} />} />
         <Route path="/home" element={<Home topMargin={minHeight} />} />
-<<<<<<< HEAD
         <Route path="/services" element={<Services topMargin={minHeight} />} />
         <Route path="/outcome" element={<Outcome topMargin={minHeight} />} />
         <Route path="/apply" element={<Apply topMargin={minHeight} />} />
@@ -30,14 +29,6 @@ function App() {
         <Route path="/contact" element={<Contact topMargin={minHeight} />} />
         <Route path="/mail" element={<Mail topMargin={minHeight} />} />
         
-=======
-        <Route path="/services" element={<Home topMargin={minHeight} />} />
-        <Route path="/outcome" element={<Home topMargin={minHeight} />} />
-        <Route path="/apply" element={<Home topMargin={minHeight} />} />
-        <Route path="/careers" element={<Home topMargin={minHeight} />} />
-        <Route path="/contact" element={<Home topMargin={minHeight} />} />
-        <Route path="/mail" element={<Home topMargin={minHeight} />} />
->>>>>>> 97fbf2618bd464bff7856b9f9af8b60232033dbf
       </Routes>
     </div>
   );

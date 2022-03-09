@@ -61,7 +61,7 @@ const Home = (props) => {
           elevation={5}
           style={{
             backgroundColor: "#202020",
-            flexBasis: "50rem",
+            flexBasis: "100%",
             padding: "1rem",
             textAlign: "center",
           }}

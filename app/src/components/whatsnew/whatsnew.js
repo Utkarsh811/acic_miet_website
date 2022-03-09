@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Paper } from "@mui/material";
+import { Button, Paper, tabClasses } from "@mui/material";
 import { styled, alpha } from '@mui/material/styles';
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -70,6 +70,17 @@ const WhatsNew = (props) => {
     setAnchorEl(null);
   };
 
+  const feloclick = ()=>{
+    window.open("https://drive.google.com/file/d/1-p5HeUGYqeVVlJnMD7lTJ_yfiWornPRw/view?usp=sharing","_blank")
+  }
+  const hoverr =()=>{
+    document.getElementById('felobtn').style.border = "2px dashed darkblue";
+  }
+  const dwnhoverr =()=>{
+    document.getElementById('felobtn').style.border = "none";
+
+  }
+
 
 
   return (
@@ -78,13 +89,16 @@ const WhatsNew = (props) => {
       elevation={5}
       style={{
         backgroundColor: "#202020",
-        padding: "0.5rem",
-        flexBasis: "20rem",
+        padding: "1.45rem",
+        flexBasis: "100%",
         textAlign: "center",
       }}
     >
       <h2>Activities & Updates</h2>
-      <TableContainer component={Paper}>
+      <TableContainer component={Paper}
+      style ={{
+        borderRadius : "1rem"
+      }}>
         <Table aria-label="simple table">
           <TableBody>
             <TableRow>
@@ -95,9 +109,13 @@ const WhatsNew = (props) => {
                   aria-haspopup="true"
                   aria-expanded={open ? 'true' : undefined}
                   variant="contained"
+                  
                   disableElevation
                   onClick={handleClick}
                   endIcon={<KeyboardArrowDownIcon />}
+                  style ={{
+                    backgroundColor:"darkblue"
+                  }}
                 >
                   ACIC Fellowship
                 </Button>
@@ -113,20 +131,68 @@ const WhatsNew = (props) => {
                 >
                   <MenuItem onClick={handleClose} disableRipple>
                     <EditIcon />
-                    Fellowship Overview
+                    <Button
+                    
+                    id = "felobtn"
+                    style={{
+                      color : "black",
+                      textTransform : "capitalize",
+                      fontSize : "medium"
+                    }}
+                    onMouseOver = {()=>(hoverr())}
+                    onMouseOut = {()=> (dwnhoverr())}
+                    onClick={()=>{feloclick()}}>
+                    Fellowship overview</Button>
+                  
+                    
                   </MenuItem>
-                  <MenuItem onClick={handleClose} disableRipple>
+                  <MenuItem 
+                  onClick={handleClose} disableRipple>
                     <FileCopyIcon />
-                    Program Structure
+                    <Button
+                    
+                   
+                    style={{
+                      color : "black",
+                      textTransform : "capitalize",
+                      fontSize : "medium"
+                    }}
+                    onMouseOver = {()=>(hoverr())}
+                    onMouseOut = {()=> (dwnhoverr())}
+                    >
+                    Program Structure</Button>
+                    
                   </MenuItem>
                   <Divider sx={{ my: 0.5 }} />
                   <MenuItem onClick={handleClose} disableRipple>
                     <QuestionAnswerIcon />
-                    Fellowship FAQs
+                    <Button
+                    
+                    
+                    style={{
+                      color : "black",
+                      textTransform : "capitalize",
+                      fontSize : "medium"
+                    }}
+                    onMouseOver = {()=>(hoverr())}
+                    onMouseOut = {()=> (dwnhoverr())}
+                    >
+                    Fellowship FAQs</Button>
                   </MenuItem>
                   <MenuItem onClick={handleClose} disableRipple>
                     <MoreHorizIcon />
-                    Resources
+                    <Button
+                    
+                    
+                    style={{
+                      color : "black",
+                      textTransform : "capitalize",
+                      fontSize : "medium"
+                    }}
+                    onMouseOver = {()=>(hoverr())}
+                    onMouseOut = {()=> (dwnhoverr())}
+                    >
+                    Resources</Button>
                   </MenuItem>
                 </StyledMenu>
 
