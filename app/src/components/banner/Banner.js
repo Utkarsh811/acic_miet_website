@@ -42,7 +42,8 @@ const Banner = (props) => {
         style={{ width: "22rem" }}
       />
       <div className="incubation-wrapper">
-        <h1 className="incubation">INCUBATION CENTRE MIET MEERUT</h1>
+        <h1 className="incubation">ATAL COMMUNITY INNOVATION CENTER</h1>
+        <h4 className="incubation">ACIC MIET Meerut FOUNDATION</h4>
       </div>
       <div>
         <Fab

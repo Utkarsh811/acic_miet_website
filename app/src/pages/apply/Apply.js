@@ -1,14 +1,14 @@
 import React from "react";
 import { Box, padding } from "@mui/system";
-import { Button, Paper,Fab } from "@mui/material";
+import { Button, Paper, Fab } from "@mui/material";
 import LinkIcon from '@mui/icons-material/Link';
 import './Apply.css'
 
 const Apply = (props) => {
-  const clickon =() =>{
-    
+  const clickon = () => {
+
     window.open('https://forms.gle/iqSngfe3tjqqGm6r9', '_blank');
-    
+
 
   }
 
@@ -52,16 +52,36 @@ const Apply = (props) => {
   return (
     <div className="Content" style={{ marginTop: props.topMargin }}>
       <Box
+        id='box1'
         sx={{
           display: 'flex',
           '& > :not(style)': {
             m: 1,
-            width: 1000,
-            height: 300,
+            maxWidth: 1000,
+            maxHeight: 300,
+
             backgroundColor: '#202020',
             color: 'white',
-            padding: '1rem',
-            wordSpacing: '2 rem'
+            padding: '3.8rem',
+            wordSpacing: '2 rem',
+            letterSpacing: '3.8px',
+            borderRadius: '1rem',
+            display: "flex",
+            flexDirection: 'column',
+            flexWrap: 'nowrap',
+            alignContent: 'space-between',
+            justifyContent: 'space-around',
+            alignItems: 'stretch'
+
+
+
+
+           
+
+
+
+
+
 
 
           },
@@ -75,23 +95,28 @@ const Apply = (props) => {
           elevation={24} >
 
           {applyContent}
-          <Fab 
-          style={
-            {
-              backgroundColor : '#026605',
-              padding: '0rem'
+          <Fab
+          id="fabico"
+            style={
+              {
+                backgroundColor: '#026605',
+                padding: '1rem',
+                maxHeight:'5vh',
+                maxWidth:'7vw',
+                minHeight:'5vh',
+                minWidth:'7vw'
+              }
             }
-          }
-          variant = 'round'
-          size="medium" color="primary" aria-label="add"
-          onClick = {() => {clickon()}}>
-          <LinkIcon sx={{ mr: 1 ,color : 'white' }} />
-          
+            variant='extended'
+            size="medium" color="primary" aria-label="add"
+            onClick={() => { clickon() }}>
+            <LinkIcon sx={{ mr: 1, color: 'white' }} />
+
           </Fab>
 
         </Paper>
       </Box>
-    </div>
+    </div >
   );
 };
 

@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Utkarsh811/acic_miet_website#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "@fontsource/roboto": "^4.5.3",
+    "express": "^4.17.2",
+    "react-main": "^0.0.3"
   }
 }

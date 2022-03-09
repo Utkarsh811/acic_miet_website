@@ -10,6 +10,8 @@ import Careers from "./pages/careers/Careers";
 import Contact from "./pages/Contact/Contact";
 import Mail from "./pages/mail/Mail";
 
+
+
 function App() {
   const theme = useTheme();
   let minHeight = Number(theme.mixins.toolbar.minHeight);
@@ -26,6 +28,7 @@ function App() {
         <Route path="/careers" element={<Careers topMargin={minHeight} />} />
         <Route path="/contact" element={<Contact topMargin={minHeight} />} />
         <Route path="/mail" element={<Mail topMargin={minHeight} />} />
+        
       </Routes>
     </div>
   );
