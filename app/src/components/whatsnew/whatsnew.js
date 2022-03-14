@@ -17,6 +17,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import Marquee from 'react-double-marquee';
 import { red } from "@mui/material/colors";
+import './whatsnew.css';
 
 
 const StyledMenu = styled((props) => (
@@ -125,19 +126,26 @@ const WhatsNew = (props) => {
                   style={{
                     width: '400px',
                     whiteSpace: 'nowrap',
+                    color:'black',
+                    background: 'linear-gradient(to top, #e29696, #f6f6f6)'
+                     
                    
-                    
+
+
 
                   }}
                 >
                   <Marquee
+                  id = 'marqe'
                   
-                  direction = {"left"}
+                
                   
-                  
+                    
+
+
                   >
 
-                    Community Innovation Fellowship for year 2022 have been announced.
+                    <strong>Community Innovation Fellowship for year 2022 have been announced.</strong>
                   </Marquee>
 
                 </div>
@@ -155,7 +163,7 @@ const WhatsNew = (props) => {
                     <EditIcon />
                     <Button
 
-                      id="felobtn"
+                     id="felobtn"
                       style={{
                         color: "black",
                         textTransform: "capitalize",
@@ -172,9 +180,11 @@ const WhatsNew = (props) => {
                     onClick={handleClose} disableRipple>
                     <FileCopyIcon />
                     <Button
+                      className="felobtn"
 
 
                       style={{
+
                         color: "black",
                         textTransform: "capitalize",
                         fontSize: "medium"
@@ -189,6 +199,8 @@ const WhatsNew = (props) => {
                   <MenuItem onClick={handleClose} disableRipple>
                     <QuestionAnswerIcon />
                     <Button
+                      className="felobtn"
+
 
 
                       style={{
@@ -204,6 +216,7 @@ const WhatsNew = (props) => {
                   <MenuItem onClick={handleClose} disableRipple>
                     <MoreHorizIcon />
                     <Button
+                      className="felobtn"
 
 
                       style={{
