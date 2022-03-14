@@ -15,6 +15,8 @@ import FileCopyIcon from '@mui/icons-material/FileCopy';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import Marquee from 'react-double-marquee';
+import { red } from "@mui/material/colors";
 
 
 const StyledMenu = styled((props) => (
@@ -70,13 +72,13 @@ const WhatsNew = (props) => {
     setAnchorEl(null);
   };
 
-  const feloclick = ()=>{
-    window.open("https://drive.google.com/file/d/1-p5HeUGYqeVVlJnMD7lTJ_yfiWornPRw/view?usp=sharing","_blank")
+  const feloclick = () => {
+    window.open("https://drive.google.com/file/d/1-p5HeUGYqeVVlJnMD7lTJ_yfiWornPRw/view?usp=sharing", "_blank")
   }
-  const hoverr =()=>{
+  const hoverr = () => {
     document.getElementById('felobtn').style.border = "2px dashed darkblue";
   }
-  const dwnhoverr =()=>{
+  const dwnhoverr = () => {
     document.getElementById('felobtn').style.border = "none";
 
   }
@@ -96,9 +98,9 @@ const WhatsNew = (props) => {
     >
       <h2>Activities & Updates</h2>
       <TableContainer component={Paper}
-      style ={{
-        borderRadius : "1rem"
-      }}>
+        style={{
+          borderRadius: "1rem"
+        }}>
         <Table aria-label="simple table">
           <TableBody>
             <TableRow>
@@ -109,16 +111,36 @@ const WhatsNew = (props) => {
                   aria-haspopup="true"
                   aria-expanded={open ? 'true' : undefined}
                   variant="contained"
-                  
+
                   disableElevation
                   onClick={handleClick}
                   endIcon={<KeyboardArrowDownIcon />}
-                  style ={{
-                    backgroundColor:"darkblue"
+                  style={{
+                    backgroundColor: "darkblue"
                   }}
                 >
                   ACIC Fellowship
                 </Button>
+                <div
+                  style={{
+                    width: '400px',
+                    whiteSpace: 'nowrap',
+                   
+                    
+
+                  }}
+                >
+                  <Marquee
+                  
+                  direction = {"left"}
+                  
+                  
+                  >
+
+                    Community Innovation Fellowship for year 2022 have been announced.
+                  </Marquee>
+
+                </div>
                 <StyledMenu
                   id="demo-customized-menu"
                   MenuListProps={{
@@ -127,72 +149,72 @@ const WhatsNew = (props) => {
                   anchorEl={anchorEl}
                   open={open}
                   onClose={handleClose}
-                  
+
                 >
                   <MenuItem onClick={handleClose} disableRipple>
                     <EditIcon />
                     <Button
-                    
-                    id = "felobtn"
-                    style={{
-                      color : "black",
-                      textTransform : "capitalize",
-                      fontSize : "medium"
-                    }}
-                    onMouseOver = {()=>(hoverr())}
-                    onMouseOut = {()=> (dwnhoverr())}
-                    onClick={()=>{feloclick()}}>
-                    Fellowship overview</Button>
-                  
-                    
+
+                      id="felobtn"
+                      style={{
+                        color: "black",
+                        textTransform: "capitalize",
+                        fontSize: "medium"
+                      }}
+                      onMouseOver={() => (hoverr())}
+                      onMouseOut={() => (dwnhoverr())}
+                      onClick={() => { feloclick() }}>
+                      Fellowship overview</Button>
+
+
                   </MenuItem>
-                  <MenuItem 
-                  onClick={handleClose} disableRipple>
+                  <MenuItem
+                    onClick={handleClose} disableRipple>
                     <FileCopyIcon />
                     <Button
-                    
-                   
-                    style={{
-                      color : "black",
-                      textTransform : "capitalize",
-                      fontSize : "medium"
-                    }}
-                    onMouseOver = {()=>(hoverr())}
-                    onMouseOut = {()=> (dwnhoverr())}
+
+
+                      style={{
+                        color: "black",
+                        textTransform: "capitalize",
+                        fontSize: "medium"
+                      }}
+                      onMouseOver={() => (hoverr())}
+                      onMouseOut={() => (dwnhoverr())}
                     >
-                    Program Structure</Button>
-                    
+                      Program Structure</Button>
+
                   </MenuItem>
                   <Divider sx={{ my: 0.5 }} />
                   <MenuItem onClick={handleClose} disableRipple>
                     <QuestionAnswerIcon />
                     <Button
-                    
-                    
-                    style={{
-                      color : "black",
-                      textTransform : "capitalize",
-                      fontSize : "medium"
-                    }}
-                    onMouseOver = {()=>(hoverr())}
-                    onMouseOut = {()=> (dwnhoverr())}
+
+
+                      style={{
+                        color: "black",
+                        textTransform: "capitalize",
+                        fontSize: "medium"
+                      }}
+                      onMouseOver={() => (hoverr())}
+                      onMouseOut={() => (dwnhoverr())}
                     >
-                    Fellowship FAQs</Button>
+                      Fellowship FAQs</Button>
                   </MenuItem>
                   <MenuItem onClick={handleClose} disableRipple>
                     <MoreHorizIcon />
                     <Button
-                    
-                    
-                    style={{
-                      color : "black",
-                      textTransform : "capitalize",
-                      fontSize : "medium"
-                    }}
-                    onMouseOver = {()=>(hoverr())}
-                    onMouseOut = {()=> (dwnhoverr())}
+
+
+                      style={{
+                        color: "black",
+                        textTransform: "capitalize",
+                        fontSize: "medium"
+                      }}
+                      onMouseOver={() => (hoverr())}
+                      onMouseOut={() => (dwnhoverr())}
                     >
-                    Resources</Button>
+                      Resources</Button>
                   </MenuItem>
                 </StyledMenu>
 
@@ -204,7 +226,7 @@ const WhatsNew = (props) => {
           </TableBody>
         </Table>
       </TableContainer>
-    </Paper>
+    </Paper >
   );
 };
 
