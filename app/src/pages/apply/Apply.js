@@ -56,27 +56,21 @@ const Apply = (props) => {
         sx={{
           display: 'flex',
           '& > :not(style)': {
-            m: 1,
-            maxWidth: 1000,
-            maxHeight: 300,
+            m: 5,
+            
+            
 
             backgroundColor: '#202020',
             color: 'white',
-            padding: '3.8rem',
-            wordSpacing: '2 rem',
-            letterSpacing: '3.8px',
-            borderRadius: '1rem',
-            display: "flex",
-            flexDirection: 'column',
-            flexWrap: 'nowrap',
-            alignContent: 'space-between',
-            justifyContent: 'space-around',
-            alignItems: 'stretch'
-
-
-
-
+            fontSize:"1em",
+            padding:"3em",
+            borderRadius:"1.5em",
+            textAlign:"center"
            
+
+
+
+
 
 
 
@@ -89,22 +83,24 @@ const Apply = (props) => {
       >
 
         <Paper
+        id="paperr"
 
           className="applycont"
           variant="outlined"
-          elevation={24} >
+          elevation={24}
+          maxWidth = '34em'
+           >
+         
 
           {applyContent}
           <Fab
-          id="fabico"
+            id="fabico"
             style={
               {
                 backgroundColor: '#026605',
-                padding: '1rem',
-                maxHeight:'5vh',
-                maxWidth:'7vw',
-                minHeight:'5vh',
-                minWidth:'7vw'
+                
+                
+                
               }
             }
             variant='extended'
