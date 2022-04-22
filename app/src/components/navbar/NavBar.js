@@ -13,15 +13,40 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 
+
 const pages = [
   "Home",
   "Services",
   "Outcome",
-  "Apply",
   "Careers",
+  // "Careers",
   "Contact",
-  "Mail",
+
+
+  "Features"
+  
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
 
 const NavBar = (props) => {
   const navigate = useNavigate();
@@ -37,6 +62,14 @@ const NavBar = (props) => {
   const handleCloseMenu = () => {
     setAnchorEl(null);
   };
+
+
+
+
+
+ 
+
+
 
   const dropDownMenu = (
     <Box>

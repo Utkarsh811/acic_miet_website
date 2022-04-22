@@ -5,10 +5,10 @@ import { useTheme } from "@mui/material/styles";
 import Home from "./pages/home/Home";
 import Services from "./pages/services/Services";
 import Outcome from "./pages/outcome/Outcome";
-import Apply from "./pages/apply/Apply";
-import Careers from "./pages/careers/Careers";
+import Careers from "./pages/career/Careers";
+// import Careers from "./pages/careers/Careers";
 import Contact from "./pages/Contact/Contact";
-import Mail from "./pages/mail/Mail";
+import Mail from "./pages/Features/Features";
 
 
 
@@ -24,10 +24,10 @@ function App() {
         <Route path="/home" element={<Home topMargin={minHeight} />} />
         <Route path="/services" element={<Services topMargin={minHeight} />} />
         <Route path="/outcome" element={<Outcome topMargin={minHeight} />} />
-        <Route path="/apply" element={<Apply topMargin={minHeight} />} />
         <Route path="/careers" element={<Careers topMargin={minHeight} />} />
+        {/* <Route path="/careers" element={<Careers topMargin={minHeight} />} /> */}
         <Route path="/contact" element={<Contact topMargin={minHeight} />} />
-        <Route path="/mail" element={<Mail topMargin={minHeight} />} />
+        <Route path="/Features" element={<Mail topMargin={minHeight} />} />
         
       </Routes>
     </div>

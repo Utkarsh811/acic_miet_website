@@ -2,12 +2,12 @@ import React from "react";
 import { Box, padding } from "@mui/system";
 import { Button, Paper, Fab } from "@mui/material";
 import LinkIcon from '@mui/icons-material/Link';
-import './Apply.css'
+import './Career.css'
 
-const Apply = (props) => {
+const Careers = (props) => {
   const clickon = () => {
 
-    window.open('https://forms.gle/iqSngfe3tjqqGm6r9', '_blank');
+    window.open('https://forms.gle/MZqEhAtLhEMfd3SG8', '_blank');
 
 
   }
@@ -116,4 +116,4 @@ const Apply = (props) => {
   );
 };
 
-export default Apply;
+export default Careers;
