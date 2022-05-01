@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "acic miet website",
   "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +19,9 @@
   "homepage": "https://github.com/Utkarsh811/acic_miet_website#readme",
   "dependencies": {
     "@fontsource/roboto": "^4.5.3",
+    "@material-ui/pickers": "^3.3.10",
     "express": "^4.17.2",
+    "material-ui-popup-state": "^2.0.0",
     "react-double-marquee": "^1.1.0",
     "react-main": "^0.0.3"
   }

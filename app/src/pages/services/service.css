@@ -1,0 +1,8 @@
+.panella:hover {
+  box-shadow: inset 4px 0 0 #0d0e10, inset -4px 0 0 #0d0e10,
+    0 4px 6px 0 rgb(39 57 71 / 30%), 0 4px 6px 2px rgb(5 123 211 / 15%);
+  z-index: 4;
+
+}
+
+

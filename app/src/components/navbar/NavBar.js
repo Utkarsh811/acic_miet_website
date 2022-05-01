@@ -23,7 +23,7 @@ const pages = [
   "Contact",
 
 
-  "Features"
+  "Facilities"
   
 ];
 

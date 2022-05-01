@@ -8,7 +8,7 @@ import Outcome from "./pages/outcome/Outcome";
 import Careers from "./pages/career/Careers";
 // import Careers from "./pages/careers/Careers";
 import Contact from "./pages/Contact/Contact";
-import Mail from "./pages/Features/Features";
+import Mail from "./pages/Features/Facilities";
 
 
 
@@ -27,7 +27,7 @@ function App() {
         <Route path="/careers" element={<Careers topMargin={minHeight} />} />
         {/* <Route path="/careers" element={<Careers topMargin={minHeight} />} /> */}
         <Route path="/contact" element={<Contact topMargin={minHeight} />} />
-        <Route path="/Features" element={<Mail topMargin={minHeight} />} />
+        <Route path="/Facilities" element={<Mail topMargin={minHeight} />} />
         
       </Routes>
     </div>
